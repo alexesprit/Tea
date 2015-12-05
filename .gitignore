@@ -1,0 +1,8 @@
+Debug/
+Release/
+
+*.csproj.user
+
+*.suo
+
+Thumbs.db
