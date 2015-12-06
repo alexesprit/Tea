@@ -80,7 +80,7 @@ namespace Tea.Properties {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to The kettle will boil in less than one minute..
+        ///   Looks up a localized string similar to The kettle will boil in less than one minute.
         /// </summary>
         internal static string KettleAlmostBlow {
             get {
@@ -98,7 +98,7 @@ namespace Tea.Properties {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to The kettle will boil in {0} minute(s)..
+        ///   Looks up a localized string similar to The kettle will boil in {0} minute(s).
         /// </summary>
         internal static string KettleWillBoil {
             get {

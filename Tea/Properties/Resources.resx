@@ -125,13 +125,13 @@
     <value>Tea</value>
   </data>
   <data name="KettleAlmostBlow" xml:space="preserve">
-    <value>The kettle will boil in less than one minute.</value>
+    <value>The kettle will boil in less than one minute</value>
   </data>
   <data name="KettleBoiling" xml:space="preserve">
     <value>The kettle is boiling!</value>
   </data>
   <data name="KettleWillBoil" xml:space="preserve">
-    <value>The kettle will boil in {0} minute(s).</value>
+    <value>The kettle will boil in {0} minute(s)</value>
   </data>
   <data name="MenuExit" xml:space="preserve">
     <value>Exit</value>
