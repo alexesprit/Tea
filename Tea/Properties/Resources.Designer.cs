@@ -114,5 +114,14 @@ namespace Tea.Properties {
                 return ResourceManager.GetString("MenuExit", resourceCulture);
             }
         }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Set delay.
+        /// </summary>
+        internal static string MenuSetDelay {
+            get {
+                return ResourceManager.GetString("MenuSetDelay", resourceCulture);
+            }
+        }
     }
 }

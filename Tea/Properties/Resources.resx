@@ -136,4 +136,7 @@
   <data name="MenuExit" xml:space="preserve">
     <value>Exit</value>
   </data>
+  <data name="MenuSetDelay" xml:space="preserve">
+    <value>Set delay</value>
+  </data>
 </root>
