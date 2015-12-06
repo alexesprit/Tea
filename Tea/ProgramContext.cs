@@ -62,7 +62,7 @@ namespace Tea {
         }
 
         private String GetRemainedTimeMessage(int remainedSeconds) {
-            if (remainedSeconds > 60) {
+            if (remainedSeconds >= 60) {
                 return String.Format(Resources.KettleWillBoil, remainedSeconds / 60);
             }
             else if (remainedSeconds > 0) {
