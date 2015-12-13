@@ -41,8 +41,7 @@
             // 
             // messageLabel
             // 
-            this.messageLabel.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
+            this.messageLabel.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.messageLabel.AutoSize = true;
             this.messageLabel.Location = new System.Drawing.Point(12, 9);
@@ -53,10 +52,13 @@
             // 
             // valueTextBox
             // 
+            this.valueTextBox.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.valueTextBox.Location = new System.Drawing.Point(15, 35);
             this.valueTextBox.Name = "valueTextBox";
             this.valueTextBox.Size = new System.Drawing.Size(213, 23);
             this.valueTextBox.TabIndex = 3;
+            this.valueTextBox.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             // 
             // InputBox
             // 
@@ -67,7 +69,9 @@
             this.Controls.Add(this.messageLabel);
             this.Controls.Add(this.okButton);
             this.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog;
+            this.MaximizeBox = false;
+            this.MinimizeBox = false;
             this.Name = "InputBox";
             this.ShowInTaskbar = false;
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
