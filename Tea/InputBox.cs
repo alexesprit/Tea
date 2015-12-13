@@ -1,4 +1,5 @@
 ﻿using System.Windows.Forms;
+using Tea.Properties;
 
 namespace Tea {
     public partial class InputBox : Form {
@@ -13,6 +14,10 @@ namespace Tea {
 
         public InputBox() {
             InitializeComponent();
+
+            messageLabel.Text = Resources.DelaySetTip;
+            Text = Resources.Settings;
+
             okButton.DialogResult = DialogResult.OK;
         }
     }

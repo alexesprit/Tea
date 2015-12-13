@@ -32,7 +32,7 @@
             // okButton
             // 
             this.okButton.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-            this.okButton.Location = new System.Drawing.Point(137, 64);
+            this.okButton.Location = new System.Drawing.Point(153, 64);
             this.okButton.Name = "okButton";
             this.okButton.Size = new System.Drawing.Size(75, 23);
             this.okButton.TabIndex = 1;
@@ -47,22 +47,22 @@
             this.messageLabel.AutoSize = true;
             this.messageLabel.Location = new System.Drawing.Point(12, 9);
             this.messageLabel.Name = "messageLabel";
-            this.messageLabel.Size = new System.Drawing.Size(202, 15);
+            this.messageLabel.Size = new System.Drawing.Size(205, 15);
             this.messageLabel.TabIndex = 2;
-            this.messageLabel.Text = "Delay before the kettle will be boiling";
+            this.messageLabel.Text = "Delay before the kettle will be boiling:";
             // 
             // valueTextBox
             // 
             this.valueTextBox.Location = new System.Drawing.Point(15, 35);
             this.valueTextBox.Name = "valueTextBox";
-            this.valueTextBox.Size = new System.Drawing.Size(197, 23);
+            this.valueTextBox.Size = new System.Drawing.Size(213, 23);
             this.valueTextBox.TabIndex = 3;
             // 
             // InputBox
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(224, 99);
+            this.ClientSize = new System.Drawing.Size(240, 99);
             this.Controls.Add(this.valueTextBox);
             this.Controls.Add(this.messageLabel);
             this.Controls.Add(this.okButton);

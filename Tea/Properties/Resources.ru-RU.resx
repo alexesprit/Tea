@@ -117,32 +117,25 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
-  <data name="AppIcon" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\AppIcon.ico;System.Drawing.Icon, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="AppName" xml:space="preserve">
-    <value>Tea</value>
-  </data>
   <data name="DelaySetTip" xml:space="preserve">
-    <value>Delay before the kettle will be boiling:</value>
+    <value>Время, через которое закипит чайник:</value>
   </data>
   <data name="KettleAlmostBlow" xml:space="preserve">
-    <value>The kettle will boil in less than one minute</value>
+    <value>Чайник закипит менее, чем через 1 мин.</value>
   </data>
   <data name="KettleBoiling" xml:space="preserve">
-    <value>The kettle is boiling!</value>
+    <value>Чайник кипит!</value>
   </data>
   <data name="KettleWillBoil" xml:space="preserve">
-    <value>The kettle will boil in {0} minute(s)</value>
+    <value>Чайник закипит через {0} мин.</value>
   </data>
   <data name="MenuExit" xml:space="preserve">
-    <value>Exit</value>
+    <value>Выход</value>
   </data>
   <data name="MenuSetDelay" xml:space="preserve">
-    <value>Set delay</value>
+    <value>Задержка</value>
   </data>
   <data name="Settings" xml:space="preserve">
-    <value>Settings</value>
+    <value>Настройки</value>
   </data>
 </root>
