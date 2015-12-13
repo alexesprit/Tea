@@ -4,7 +4,7 @@ using Tea.Properties;
 
 namespace Tea {
     class ProgramContext : ApplicationContext {
-        private static int TITLE_UPDATE_INTERVAL = 1; // in seconds
+        private static int TITLE_UPDATE_INTERVAL = 30; // in seconds
         private static int NOTIFICATION_DELAY = 0; // default delay
 
         private NotifyIcon notifyIcon;
@@ -16,11 +16,11 @@ namespace Tea {
             SetupNotifyTimer();
 
             ShowRemainedTimeMessage(Settings.Default.BoilDelay * 60);
+            SetNotifyIconCaption(Settings.Default.BoilDelay * 60);
         }
 
         private void SetupNotifyIcon() {
             notifyIcon = new NotifyIcon() {
-                Text = Resources.AppName,
                 Icon = Resources.AppIcon,
                 ContextMenu = new ContextMenu(new MenuItem[] {
                     new MenuItem(Resources.MenuSetDelay, OnSetDelayClicked),
@@ -50,6 +50,10 @@ namespace Tea {
 
             notifyTimer.Start();
             updateUiTimer.Start();
+        }
+
+        private void SetNotifyIconCaption(int remainedSeconds) {
+            notifyIcon.Text = GetRemainedTimeMessage(remainedSeconds);
         }
 
         private void ShowRemainedTimeMessage(int remainedSeconds) {
@@ -91,6 +95,7 @@ namespace Tea {
 
                     RestartNotifyTimer();
                     ShowRemainedTimeMessage(interval * 60);
+                    SetNotifyIconCaption(interval * 60);
                 }
             }
         }
@@ -111,7 +116,7 @@ namespace Tea {
 
         private void OnUpdateTitle(object sender, EventArgs args) {
             int remainedSeconds = notifyTimer.Remained / 1000;
-            notifyIcon.Text = GetRemainedTimeMessage(remainedSeconds);
+            SetNotifyIconCaption(remainedSeconds);
         }
 
         private void OnBallonTipClosed(object sender, EventArgs args) {
